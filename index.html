@@ -7,39 +7,62 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 40px;
+            margin: 0; /* Remove default margin to allow background to fill */
             background-color: #f4f4f4;
             color: #333;
             text-align: center;
+            /* Jungle background styles */
+            background-image: url('backgrounds/menu.png'); /* Updated to use menu.png from backgrounds folder */
+            background-size: cover; /* Cover the entire viewport */
+            background-position: center; /* Center the background image */
+            background-repeat: no-repeat; /* Do not repeat the background image */
+            background-attachment: fixed; /* Keep background fixed when scrolling */
+            min-height: 100vh; /* Ensure body takes full viewport height */
+            display: flex; /* Use flexbox for vertical centering */
+            flex-direction: column; /* Stack children vertically */
+            justify-content: space-between; /* Push footer to the bottom */
         }
         h1 {
-            color: #0056b3;
+            color: #0056b3; /* Original color, consider changing for contrast */
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.5); /* Add shadow for better readability */
         }
         p {
             font-size: 1.1em;
             line-height: 1.6;
+            color: #333; /* Original color, consider changing for contrast */
+            text-shadow: 1px 1px 2px rgba(255,255,255,0.7); /* Add shadow for better readability */
         }
         .container {
-            background-color: #fff;
+            background-color: rgba(255, 255, 255, 0.85); /* Semi-transparent white background for content */
             padding: 30px;
             border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Enhanced shadow */
             max-width: 800px;
-            margin: 20px auto;
+            margin: 40px auto; /* Adjust margin for spacing */
+            flex-grow: 1; /* Allow container to grow and push footer down */
         }
         footer {
-            margin-top: 50px;
+            margin-top: 20px; /* Adjust margin */
             font-size: 0.9em;
-            color: #666;
+            color: #fff; /* White text for footer for better contrast */
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.7); /* Add shadow for better readability */
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent dark background for footer */
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>ברוכים הבאים לאתר הפשוט שלי!</h1>
-        <p>זהו אתר HTML בסיסי שיצרתי עבורך. הוא כולל כותרת, פיסקה פשוטה וקצת עיצוב בסיסי באמצעות CSS.</p>
-        <p>אתה יכול לערוך את הטקסט, להוסיף תמונות, קישורים וכל תוכן אחר שתרצה.</p>
-        <p>שיהיה בהצלחה!</p>
+        <h1>גלו את עולם האפליקציות שלי!</h1>
+        <p>אני מזמין אתכם לצלול לעולם של אפליקציות מרתקות וחדשניות שפיתחתי במיוחד עבורכם.</p>
+        <p>בין אם אתם מחפשים משחקים, כלי עזר, או <b>אפליקציות לימודיות אדפטיביות</b> שמותאמות אישית לכל לומד, תמצאו משהו שיעניין אתכם.</p>
+        <p>האפליקציות הלימודיות שלי מתוכננות לספק חווית למידה אישית ומרתקת, המתאימה לקצב ולצרכים הייחודיים של כל אחד.</p>
+        <p>בקרו בעמוד המפתח שלי בחנות Google Play כדי לראות את כל האפליקציות ולגלות את הפרויקטים הבאים:</p>
+        <p>
+            <a href="https://play.google.com/store/apps/developer?id=Ohadyy22" target="_blank" style="color: #0056b3; text-decoration: underline; font-weight: bold;">
+                לחצו כאן לעמוד המפתח שלי
+            </a>
+        </p>
     </div>
 
     <footer>
